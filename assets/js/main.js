@@ -1,15 +1,7 @@
 window.onload = function(){
     // ALL PAGES
     WriteMenu();
-    var $el = $(".nav").offcanvas({
-        effect: "slide-in-over",
-        overlay: true,
-        origin: "right"
-    });
     
-    $(".toggle-menu").on("click.offcanvas", function() {
-        $el.offcanvas("show");
-    });
     // INDEX.HTML
 
     if(window.location.href.includes("index.html")){
