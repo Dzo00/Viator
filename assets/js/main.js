@@ -1,7 +1,15 @@
 window.onload = function(){
     // ALL PAGES
     WriteMenu();
-
+    var $el = $(".nav").offcanvas({
+        effect: "slide-in-over",
+        overlay: true,
+        origin: "right"
+    });
+    
+    $(".toggle-menu").on("click.offcanvas", function() {
+        $el.offcanvas("show");
+    });
     // INDEX.HTML
 
     if(window.location.href.includes("index.html")){
@@ -12,7 +20,7 @@ window.onload = function(){
             catEl[i].addEventListener("click",RemmemberID);
         }
         writePlaces();
-        CSS();
+
         let catDivPos = $("#categories").offset().top;
         //console.log(catDivPos);
         
@@ -128,6 +136,10 @@ window.onload = function(){
             writeBoxes("Activity",niz,$('#ispis1'));
         }
     }
+
+    
+    $(window).resize(CSS);
+    CSS();
 }
 
 
@@ -584,7 +596,7 @@ function MakeHTML(type,object){
     if(type=='Activity'){
         for(let obj of object){
             html += `
-            <div class="card fadeIn m-4 px-0 col-lg-5 col-md-2 col-sm-1">
+            <div class="card fadeIn m-lg-4 m-md-2 m-sm-3 m-2 px-0  col-md-4 col-10">
                 <img class="card-img-top" src="assets/images/${obj.image.src}" alt="${obj.image.alt}">
                 <div class="card-body">
                     <h5 class="card-title font-weight-bold text-uppercase">${obj.name}</h5>
@@ -592,7 +604,7 @@ function MakeHTML(type,object){
                     <a href="#" data-id="${obj.id}"  data-toggle="modal" data-target="#modalAct" class="card-title h6 black mt-3 d-block text-black font-weight-bold">Learn more</a>
                 </div>
                 <div class="card-footer w-100 p-0 h-10 d-flex justify-content-evenly">
-                    <div class="py-3 h-100 align-items-center col-6 text-center font-weight-bold"><a href="${obj.directions}"><p>Get directions</p></a></div>
+                    <div class="pt-xl-3 pt-lg-4 pt-md-3 pt-sm-3 pt-2 h-100 align-items-center col-6 text-center font-weight-bold"><a href="${obj.directions}"><p>Get directions</p></a></div>
                     <div data-pg="Activity" data-id="${obj.id}" class="suitcase py-3 col-6 bg-black d-flex align-items-center justify-content-center"><span class="font-weight-bold"><i class="fas fa-suitcase-rolling mx-2"></i>Add to suitcase</span></div>
                 </div>
             </div>
@@ -603,7 +615,7 @@ function MakeHTML(type,object){
     else if(type=="accomodation"){
         for(let obj of object){
             html +=`
-                <div class="card fadeIn m-4 px-0 col-md-4 col-sm-1">
+                <div class="card cit1 fadeIn m-lg-4 m-md-2 m-sm-3 m-2 px-0  col-md-5 col-10">
                     <img class="card-img-top" src="assets/images/${obj.image.src}" alt="${obj.image.alt}">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">${obj.name}</h5>
@@ -848,7 +860,43 @@ function proverRegister(e){
 
 // GLUPI CSS - hate it x(
 function CSS(){
-    let div =  document.getElementsByClassName("headline")[1];
-    //console.log(div);
-    div.style.padding="0px 60px 0px 0px";
+    if(url.includes('index.html')){
+        let div =  document.getElementsByClassName("headline")[1];
+        //console.log(div);
+        div.style.padding="0px 60px 0px 0px";
+    }
+    if(url.includes('places.html')){
+        if(screen.width<1100){
+            console.log($('.card-body p'))
+            let cards = $('.card-body p');
+            for(let card of cards){
+                card.style.fontSize = '13px'
+            }
+            
+        }
+        console.log(screen.width<930)
+        if(screen.width<930){
+            
+            let h5 = $('.card-body h5');
+            for(let h5s of h5){
+                h5s.style.fontSize = '15px'
+            }
+        }
+    }
+
+    if(url.includes('suitcase.html')){
+        let cards= $('.card');
+        for(let card of cards){
+            card.classList.remove('col-md-4');
+            card.classList.add('col-md-5')
+        }
+    }
+    //1024px MENI
+    if(screen.width<1024){
+        $('#meni').hide();
+        $('#toggle-menu').show();
+    }else{
+        $('#meni').show();
+        $('#toggle-menu').hide();
+    }
 }
