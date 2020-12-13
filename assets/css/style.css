@@ -275,7 +275,7 @@ footer{
 footer{
     height: 65px;
     color: #a09b9b;;
-    font-size: calc(1px + 1vw);
+    font-size: calc(4px + 1vw);
 }
 footer i{
     font-size: calc(15px + 1vw);
@@ -380,21 +380,21 @@ footer i:hover{
     background-color: #39495a;
     color:white;
 }
-.modal-footer div:nth-of-type(1) span, .card-footer div:nth-of-type(1) span{
+.card-footer div:nth-of-type(1) span{
     font-size:calc(20px + 1vw);
 }
-.modal-footer div:nth-of-type(1) p, .card-footer div:nth-of-type(1) p{
-    font-size: calc(1px + 1vw);
+.card-footer div:nth-of-type(1) p{
+    font-size: 17px;
     margin: 0px;
 }
-.modal-footer div:nth-of-type(2),.card-footer div:nth-of-type(2){
+.card-footer div:nth-of-type(2){
     background-color: #989898;
 }
-.modal-footer div:nth-of-type(2) span,.card-footer div:nth-of-type(2) span{
+.card-footer div:nth-of-type(2) span{
     text-align: center;
-    font-size: calc(10px + 0.4vw);
+    font-size: 17px;
 }
-.modal-footer  div:nth-of-type(2) span i, .card-footer div:nth-of-type(2) span i{
+ .card-footer div:nth-of-type(2) span i{
     font-size: calc(10px + 1vw);
 }
 .modal-body .additional i{
@@ -502,4 +502,77 @@ footer i:hover{
 }
 .bg-gray{
     background: linear-gradient(50deg,  #4e4e4e 0%,#fff 100%);
+}
+@media screen and (max-width:1350px){
+    .card-img-top{
+        height: 48% !important;
+    }
+    .cit1{
+        height: 55% !important;
+    }
+}
+@media screen and (max-width:1150px){
+    .card-footer div:nth-of-type(1) p{
+        font-size: 15px !important;
+        padding: 0px !important;
+    }
+    .card-footer div:nth-of-type(2) span{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1100px){
+    .card-img-top{
+        height: 40% !important;
+    }
+    .cit1{
+        height: 80% !important;
+    }
+}
+@media screen and (max-width:1100px){
+    .card-img-top{
+        height: 35% !important;
+    }
+    .cit1 .card-img-top{
+        height: 40% !important;
+    }
+    .cit1 .card-body p{
+        font-size: 11px !important;
+    }
+}
+@media screen and (max-width:770px){
+    .card-img-top{
+        height: 55% !important;
+    }  
+}
+@media screen and (max-width:650px){
+    .card-img-top{
+        height: 43% !important;
+    }
+    .cit1 .card-img-top{
+        height: 60% !important;
+    }
+}
+@media screen and (max-width:580px){
+    .card-img-top{
+        height: 45% !important;
+    }
+    .card-footer div:nth-of-type(1) p{
+        font-size: 13px !important;
+        padding: 0px !important;
+    }
+    .card-footer div:nth-of-type(2) span{
+        font-size: 13px;
+    }    
+    .cit1 .card-img-top{
+        height: 50% !important;
+    }
+    .cit1 .card-body p{
+        font-size: 10px !important;
+    }
+    .cit1 .card-footer{
+        font-size: 11px !important;
+    }
+    .cit1 .card-footer span{
+        font-size: 15px !important;
+    }
 }
