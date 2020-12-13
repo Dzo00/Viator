@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viator</title>
+    <title>Viator | Activities</title>
+    <meta name="author" content="Jovana Lazarevic"/>
+	<meta name="description" content="it's time to explore, pack your bag and come on!"/>
+    <meta name="keywords" content="activities, rafting, hiking"/>
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <!-- Font -->
@@ -18,21 +21,21 @@
             <!-- HEADER -->
     <header id="activities-header">
         <div id="logo" class="col-sm-4 position-absolute"><a href="index.html"><h1>Viator</h1></a></div>  <!-- Relative pos -->
-        <div id="top" class="col-sm-12 d-flex justify-content-end">
+        <div id="top" class="col-12 d-flex justify-content-end">
             <!--Visible on lg -> Meni  -->
             <ul id="meni" class="col-lg-8 nav"></ul>
             <!--Visible on sm,md -> Meni  -->
     </header>
     <div class="main">
-        <div class="top-main d-flex mb-5 bg-gray">
-                <select name="ddlActivity"  class="form-control border-secondary col-1 mx-3" id="ddlActivity">
+        <div class="top-main d-flex  mb-5 bg-gray">
+                <select name="ddlActivity"  class="form-control border-secondary col-1 col-md-3 col-4 mx-3" id="ddlActivity">
                     <option value="0">Activity Type</option>
                 </select>
-                <select name="ddlLocation" class="form-control border-secondary w-10" id="ddlLocation">
+                <select name="ddlLocation" class="form-control border-secondary col-md-3 col-4" id="ddlLocation">
                     <option value="0">Location</option>
                 </select>
         </div>
-        <div class="middle-main justify-content-center row"></div>
+        <div class="middle-main justify-content-center row row-cols-2"></div>
             
     </div>
      <!-- //MODAL AKTIVNOST -->
