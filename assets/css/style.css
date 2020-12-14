@@ -293,7 +293,7 @@ footer i:hover{
 /* *********************************************** */
 /* Main on other pages */
 .main{
-    margin: 40px 80px;
+    padding: 40px 80px;
 }
 .top-main{
     border-top:2px solid #000;
@@ -301,11 +301,8 @@ footer i:hover{
     padding: 3% 0%;
     width: 100%;
 }
-.top-main-left{
-    width: 50%;
-}
 .top-main-right{
-    width: 50%;
+    width: 70%;
 }
 .w-10{
     width:10%;
@@ -553,6 +550,10 @@ footer i:hover{
     .card-img-top{
         height: 55% !important;
     }  
+    .top-main-right{
+        width: 100%;
+        margin-top:20px;
+    }
 }
 @media screen and (max-width:650px){
     .card-img-top{
