@@ -1,7 +1,8 @@
 window.onload = function(){
     // ALL PAGES
     WriteMenu();
-    
+    $('#sideMenu').hide();
+    $('#toggle-menu').on("click",displaySideMenu);
     // INDEX.HTML
 
     if(window.location.href.includes("index.html")){
@@ -138,7 +139,10 @@ window.onload = function(){
 // TRENUTNA STRANICA
 var url=window.location.href;
 
-
+function displaySideMenu(e){
+    e.preventDefault();
+    $('#sideMenu').slideToggle();
+}
 // FILTRIRANJE SADRZAJA PO LOKACIJI / TIPU SMESTAJA / CENI i LOKACIJI/AKTIVNOSTI
 
 function Filter(){
@@ -890,5 +894,6 @@ function CSS(){
     }else{
         $('#meni').show();
         $('#toggle-menu').hide();
+        $('#sideMenu').hide();
     }
 }
