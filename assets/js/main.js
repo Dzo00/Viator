@@ -772,7 +772,7 @@ function proveraLog(e){
     email = $("#emailLog").val();
     pass= $("#pass").val();
     
-    alert(pass)
+    //alert(pass)
     let fail=[];
     if(!rePassword.test(pass) || pass.length==0){
         $("#pass").css("border-color","#ee0f0f").next().text("Password or username don't match!");
