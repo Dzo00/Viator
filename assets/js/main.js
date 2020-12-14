@@ -22,10 +22,10 @@ window.onload = function(){
         $(window).on('scroll',()=> {
             let scroll = $(window).scrollTop();
             //console.log(scroll);
-
             if(scroll<catDivPos - 310){
-                $('#categories').css("transform",`translateX(${-2000+scroll*1.83}px)`);
+                $('#categories').css("transform",`translateX(${-1900+scroll*1.83}px)`);
             }
+            
         });
         $('.slickCarousel').slick({
             autoplay: true,
@@ -239,7 +239,7 @@ function WriteCategories(){
     //console.log(div);
     let txt=``;
     for(let cat of categories){
-        txt += `<div class="show-animation col-lg-3 circles">
+        txt += `<div class="show-animation col-xl-3 col-lg-4 circles">
                 <a class="activity" href="activities.html" data-id="${cat.id}">
                     <img src="assets/images/${cat.src}" alt="${cat.alt}"/>
                     <div class="hold"><h4>${cat.name}</h4></div>
