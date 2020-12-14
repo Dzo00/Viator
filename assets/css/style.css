@@ -117,7 +117,7 @@ header::after{
 }
 .headline {
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
     width:40%;
     margin: 0 auto;
@@ -504,12 +504,23 @@ footer i:hover{
 .bg-gray{
     background: linear-gradient(50deg,  #4e4e4e 0%,#fff 100%);
 }
+@media screen and (max-width:1543px){
+    #comment h2{
+        font-size: 22px !important;
+    }
+    #comment p{
+        font-size: 18px !important;
+    }
+}
 @media screen and (max-width:1350px){
     .card-img-top{
         height: 48% !important;
     }
     .cit1{
         height: 55% !important;
+    }
+    #headline2{
+        padding: 80px 50px !important;
     }
 }
 @media screen and (max-width:1150px){
@@ -520,6 +531,12 @@ footer i:hover{
     .card-footer div:nth-of-type(2) span{
         font-size: 15px;
     }
+    #comment h2{
+        font-size: 20px !important;
+    }
+    #comment p{
+        font-size: 16px !important;
+    }
 }
 @media screen and (max-width:1100px){
     .card-img-top{
@@ -527,6 +544,24 @@ footer i:hover{
     }
     .cit1{
         height: 80% !important;
+    }
+    #comment h2{
+        font-size: 18px !important;
+    }
+    #comment p{
+        font-size: 14px !important;
+    }
+    .headline i {
+        font-size: 40px;
+    }
+    .headline h3,p {
+        font-weight: bold;
+    }
+    .headline h3{
+        font-size: 24px;
+    }
+    .headline p{
+        font-size: 17px;
     }
 }
 @media screen and (max-width:1100px){
@@ -538,6 +573,11 @@ footer i:hover{
     }
     .cit1 .card-body p{
         font-size: 11px !important;
+    }
+}
+@media screen and (max-width:915px){
+    #headline2{
+        padding:50px 0px !important;
     }
 }
 @media screen and (max-width:770px){
@@ -555,6 +595,15 @@ footer i:hover{
     }
     .cit1 .card-img-top{
         height: 60% !important;
+    }
+    #headline2{
+        padding: 70px 0px !important;
+    }
+    #headline2 h3{
+        font-size: 22px !important;
+    }
+    #headline2 p {
+        font-size:14px !important ;
     }
 }
 @media screen and (max-width:580px){
@@ -579,5 +628,11 @@ footer i:hover{
     }
     .cit1 .card-footer span{
         font-size: 15px !important;
+    }
+    #comment h2{
+        font-size: 16px !important;
+    }
+    #comment p{
+        font-size: 12px !important;
     }
 }
