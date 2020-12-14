@@ -23,7 +23,7 @@ window.onload = function(){
             let scroll = $(window).scrollTop();
             //console.log(scroll);
             if(scroll<catDivPos - 310){
-                $('#categories').css("transform",`translateX(${-2000+scroll*1.83}px)`);
+                $('#categories').css("transform",`translateX(${-1900+scroll*1.7}px)`);
             }
             
         });
