@@ -419,6 +419,16 @@ footer i:hover{
 .fw-500{
     font-weight: 500;
 }
+#sideMenu{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    top:80px;
+    right:0px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+}
 /* KLASE ZA PRIMENU SA JS */
 .active{
     color: #fff !important;
