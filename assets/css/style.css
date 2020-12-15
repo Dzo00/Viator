@@ -10,7 +10,7 @@ a:hover{
     color: rgba(255,255,255,1);
 }
 /* Main page header */
-header{
+.header{
     height: 1100px;
     background-image: url("../images/main_background.jpg");
     background-position: center;
@@ -99,8 +99,7 @@ main{
     background-position: bottom;
     background-size: 1420px;
 }
-
-header::after{
+.header::after{
     content: "";
     display: block;
     position: absolute;
@@ -113,7 +112,6 @@ header::after{
     background-position: center 29%;
     background-image: url("../images/forest1a.png");
     z-index: 0;
-
 }
 .headline {
     z-index: 1;
