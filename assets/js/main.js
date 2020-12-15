@@ -744,10 +744,10 @@ var Lodging = [
 // ANIMATE METOD
 
 function showActivity(){
-    $(this).children().find(".hold").animate({"opacity":"1","transition":"opacity 0.7s"});
+    $(this).children().find(".hold").stop(true,true).animate({"opacity":"1","transition":"opacity 0.7s"});
 }
 function hideActivity(){
-    $(this).children().find(".hold").animate({"opacity":"0","transition":"opacity 0.4s"});
+    $(this).children().find(".hold").stop(true,true).animate({"opacity":"0","transition":"opacity 0.4s"});
 }
 
 // Local Storage funkcionalnost
