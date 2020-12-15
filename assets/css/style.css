@@ -10,14 +10,16 @@ a:hover{
     color: rgba(255,255,255,1);
 }
 /* Main page header */
+header{    
+    padding-top: 50px;
+    color:white;
+}
 .header{
     height: 1100px;
     background-image: url("../images/main_background.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 50px;
-    color:white;
+    background-size: cover; 
 }
 #top{
     height:80px;
