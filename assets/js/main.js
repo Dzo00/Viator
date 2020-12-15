@@ -194,9 +194,9 @@ function Filter(){
     
     writeBoxes(type,filtriraniNiz);
     $(".fadeIn").hide();
-    $(".fadeIn").fadeIn();
+    //$(".fadeIn").fadeIn();
     $(".fadeIn").fadeIn("slow");
-    $(".fadeIn").fadeIn(4000);
+    //$(".fadeIn").fadeIn(4000);
 }
 
 //
