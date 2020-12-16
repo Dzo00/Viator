@@ -601,6 +601,14 @@ footer i:hover{
         font-size: 19px!important;
         padding: 13px !important;
     }
+    header #logo h1{
+        margin-top:23% !important;
+    }
+}
+@media screen and (max-width:686px){
+    header #logo h1{
+        margin-top:28% !important;
+    }
 }
 @media screen and (max-width:650px){
     .card-img-top{
@@ -674,6 +682,9 @@ footer i:hover{
     #comment p{
         font-size: 12px !important;
     }
+    #logo{        
+        width: 200px!important;
+    }
 }
 @media screen and (max-width:450px){
      .places-box{
@@ -684,7 +695,10 @@ footer i:hover{
         padding: 70px 20px !important;
     }
     #logo{
-        width: 150px!important;
-        top:1% !important;
+        height:150px !important;
+        top:1.5% !important;
     }
+    #logo h1{    
+        margin-top: 15% !important;
+    }  
 }
