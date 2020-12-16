@@ -621,7 +621,7 @@ footer i:hover{
 }
 @media screen and (max-width:600px){
     .places-box{
-        width: 25vw !important;
+        height: 25vw !important;
     }
     .headline{
         width: 80% !important;
@@ -644,7 +644,7 @@ footer i:hover{
 }
 @media screen and (max-width:580px){
     .places-box{
-        width: 29vw !important;
+        height: 29vw !important;
     }
     .card-img-top{
         height: 45% !important;
@@ -677,7 +677,7 @@ footer i:hover{
 }
 @media screen and (max-width:450px){
      .places-box{
-        width: 32vw !important;
+        height: 32vw !important;
     }
     .places-box{
         width: 32vw !important;
